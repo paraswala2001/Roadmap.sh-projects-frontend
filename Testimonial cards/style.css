@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: white;
+    padding: 50px;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.testimonials{
+    max-width: 1100px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+.card{
+    border-radius: 20px;
+    padding: 25px;
+}
+.dark{
+    background  : #111;
+    color: white;
+}
+.light{
+    background: white;
+    color: black;
+    border: 2px solid black;
+}
+.speech{
+    position: relative;
+}
+.speech::after{
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    left: 40px;
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 15px solid #111;
+}
+.profile{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 15px;
+   
+   
+
+}
+
+.Profile img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.Profile h4{
+    font-size: 16px;
+}
+.Profile span{
+    font-size: 16px;
+    color: rgb(40, 40, 40);
+
+
+    
+}
+.big{
+    grid-column: span 2;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.big img{
+    width: 300px;
+    border-radius: 20px;
+   
+}
+.big .content{
+    max-width: 600px;
+}
+.stars{
+    color: yellow;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.big span{
+    font-size: 14px;
+    color: #aaaaaa;
+}
+.big h3{
+    margin-bottom: 5px;
+}
+.big p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+.slider{
+    grid-column: span 2;
+    text-align: center;
+}
+.images{
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 15px;
+margin: 20px 0;
+
+}
+.images img{
+    border-radius: 50%;
+    opacity: 0.4;
+
+}
+.images img.blurred{
+    opacity: 1;
+    width: 55px;
+}
+.images span{
+    font-size: 20px;
+    cursor: pointer;
+
+}
+.images h4{
+    font-weight: bold;
+}
+@media (max-width: 900px) {
+  .testimonials {
+    grid-template-columns: 1fr;
+  }
+
+  .big,
+  .slider {
+    grid-column: span 1;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .big img {
+    width: 100%;
+  }
+}
+

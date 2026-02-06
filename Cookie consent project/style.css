@@ -1,0 +1,44 @@
+
+.cookies{
+  width: 320px;
+  padding: 16px;
+  border: 1px solid #ccc;
+  position: fixed;
+  bottom: -200px;   /* start hidden */
+  right: 20px;
+  background: #fff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: all 0.4s ease;
+   
+   
+
+}
+.cookies.show {
+bottom: 20px;
+}
+.cookies-icon{
+    font-size: 25px;
+    
+}   
+.cookies-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+
+
+   
+
+}
+button{
+    background-color: #a9a1a1;
+}
+button:hover{
+    background-color: #7c7a7a;
+}
+#close-btn {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 18px;
+}
